@@ -1,7 +1,5 @@
 name: Build pakai cron
 on:
-    schedule:
-    - cron: "0 0 * * *"
     
 jobs:
   build and deploy:
