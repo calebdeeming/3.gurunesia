@@ -22,7 +22,7 @@ jobs:
         
     - uses: pulimento/github-action-hugo-deploy-to-firebase@master
       with:
-        firebase-token: ${{ secrets.secret_firebase_token }}
+        firebase-token: ${{ secrets.FIREBASE_TOKEN }}
 
         
 
