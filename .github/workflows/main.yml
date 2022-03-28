@@ -17,6 +17,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build --prod
+      - name: build
+        run: hugo
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
@@ -34,8 +36,6 @@ jobs:
         with:
           name: public
           path: public
-      - name: build
-        run: hugo
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
