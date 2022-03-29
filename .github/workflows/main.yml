@@ -28,7 +28,6 @@ jobs:
     - name: Build                                
       run: hugo
       
-    - name: ke firebase
-      uses: pulimento/github-action-hugo-deploy-to-firebase@master
+    - uses: pulimento/github-action-hugo-deploy-to-firebase@master
       with:
         firebase-token: ${{ secrets.firebase_token }}
